@@ -1,6 +1,6 @@
 # coding: utf8
 
-# Copyright (C) 2016 NOUCHET Christophe
+# Copyright (C) 2016 Ryan Festag
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -21,9 +21,9 @@ setup(
     name='SimplePigKernel',
     version='0.1',
     description='A pig kernel for Jupyter',
-    url='http://gogs.atrevrix.fr/Jupyter/SimplePigKernel',
-    author='Christophe Nouchet',
-    author_email='nouchet.christophe@gmail.com',
+    url='https://github.com/rfestag/SimplePigKernel',
+    author='Ryan Festag',
+    author_email='rfestag@gmail.com',
     license='GPLv3',
     packages=['PigKernel'],
 )

@@ -1,6 +1,7 @@
 # Author
 
 NOUCHET Christophe <nouchet.christophe@gmail.com>
+Updated and packaged by Ryan <rfestag@gmail.com>
 
 # Version
 
@@ -8,7 +9,7 @@ NOUCHET Christophe <nouchet.christophe@gmail.com>
 
 # License
 
-Copyright (C) 2016 NOUCHET Christophe
+Copyright (C) 2016 Ryan Festag
 
 
 This program is free software; you can redistribute it and/or modify
@@ -46,9 +47,9 @@ vim pig_kernel/kernel.json
 {
     ...
     "env": {
-        "JAVA_HOME": "/usr/lib/jvm/java-7-openjdk-amd64",
-        "PIG_HOME": "/opt/pig-0.15.0",
-        "HADOOP_HOME": "/opt/hadoop-2.6.4",
+        "JAVA_HOME": "/usr/lib/jvm/java-8-openjdk",
+        "PIG_HOME": "/opt/pig-0.16.0",
+        "HADOOP_HOME": "/opt/hadoop-2.6.5",
         "LOG4J_CONF_FILE": "/root/log4j.properties"
     }
     ...

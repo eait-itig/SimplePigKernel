@@ -1,6 +1,6 @@
 {
     "argv":[
-        "python3",
+        "python",
         "-m",
         "PigKernel.kernel",
         "-f",
@@ -9,9 +9,9 @@
     "display_name":"Pig",
     "language": "pig",
     "env": {
-        "JAVA_HOME": "/usr/lib/jvm/java-7-openjdk-amd64",
-        "PIG_HOME": "/opt/pig-0.15.0",
-        "HADOOP_HOME": "/opt/hadoop-2.6.4",
+        "JAVA_HOME": "/usr/lib/jvm/java-1.8-openjdk",
+        "PIG_HOME": "/usr/pig-0.16.0",
+        "HADOOP_HOME": "/usr/hadoop-2.6.5",
         "LOG4J_CONF_FILE": "/root/log4j.properties"
     }
 }
