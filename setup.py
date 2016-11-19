@@ -22,6 +22,7 @@ setup(
     version='0.1',
     description='A pig kernel for Jupyter',
     url='https://github.com/rfestag/SimplePigKernel',
+    download_url='https://github.com/rfestag/SimplePigKernel/tarball/0.1',
     author='Ryan Festag',
     author_email='rfestag@gmail.com',
     license='GPLv3',
