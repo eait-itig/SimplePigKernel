@@ -138,6 +138,8 @@ class PigKernel(Kernel):
                 working_line = line.strip();
 
                 # Send the line to grunt
+                if working_line == '':
+                    continue;
                 self.pig.sendline(working_line);
                 index = self.pig.expect(GRUNT_SEPARATOR, timeout=GRUNT_TIMEOUT);
 
@@ -150,7 +152,7 @@ class PigKernel(Kernel):
                     self.send_response(self.iopub_socket, 'stream', stream_content);
 
                 # If is the end of a command, isolate it from other command
-                if index == GRUNT_NEW_LINE_MODEL_INDEX:
+                if index == GRUNT_NEW_LINE_MODEL_INDEX and working_line.endswith(';'):
                     self.post_command(silent);
                     self.pre_command();
 
