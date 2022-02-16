@@ -57,9 +57,11 @@ class PigKernel(Kernel):
         opt = "";
         if "LOG4J_CONF_FILE" in os.environ:
             opt += " -4 " + os.environ["LOG4J_CONF_FILE"];
+        if "PIG_EXTRA_OPTS" in os.environ:
+            opt += os.environ["PIG_EXTRA_OPTS"];
         # Start grunt
         pig_home = "/usr/pig" if os.environ.get("PIG_HOME") == None else os.environ["PIG_HOME"]
-        self.pig = pexpect.spawn(pig_home + "/bin/pig -x local " + opt);
+        self.pig = pexpect.spawn(pig_home + "/bin/pig " + opt);
 
         # Wait until grunt start
         self.pig.expect(GRUNT_NEW_LINE_MODEL, timeout=GRUNT_START_TIMEOUT);
